@@ -3,6 +3,7 @@ import { Badge } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const Container = styled.div`
@@ -77,8 +78,15 @@ const Home = () => {
                     <Logo>Aakash Chavda</Logo>
                 </Center>
                 <Right>
-                    <MenuItem>ABOUT</MenuItem>
-                    <MenuItem>RESUME</MenuItem>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <MenuItem>HOME</MenuItem>
+                    </Link>
+                    <Link to="/resume" style={{ textDecoration: "none" }}>
+                        <MenuItem>RESUME</MenuItem>
+                    </Link>
+                    <Link to="/about" style={{ textDecoration: "none" }}>
+                        <MenuItem>ABOUT</MenuItem>
+                    </Link>
                     <MenuItem>
                         {/* <Badge badgeContent={4} color="primary">
                             <LocalGroceryStoreIcon />

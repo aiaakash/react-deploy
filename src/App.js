@@ -1,8 +1,11 @@
 import './App.css';
-import Home from "./home"
+import Home from "./home";
+import Resume from "./resume";
 // import { Document, Page, Text, Image, StyleSheet, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import React, { useState } from "react";
 // import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from './about';
 
 
 
@@ -17,20 +20,21 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Home />
-      <body>
-        {/* <Document file="/sample.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page height="600" pageNumber={pageNumber} />
-      </Document> */}
-        {/* <object width="100%" height="1200px" data="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" type="application/pdf">
-        </object> */}
-        {/* <iframe src="./resume.pdf" height="800" width="70%">
-      </iframe> */}
-        {/* <embed src="resume.pdf" type="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/view?usp=sharing" width="800px" height="2100px" /> */}
-        <iframe src="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" width="100%" height="1200px" allow="autoplay"></iframe>
-      </body>
-    </div >
+    <Router>
+      <div className="App">
+        {/* <Home /> */}
+        <Routes>
+          <Route path="/">
+            <Route index element={<Home />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="about" element={<About />} />
+            {/* <body>
+            <iframe src="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" width="100%" height="1200px" allow="autoplay"></iframe>
+          </body> */}
+          </Route>
+        </Routes>
+      </div >
+    </Router>
   );
 }
 
