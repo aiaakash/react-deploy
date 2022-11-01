@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { Badge } from '@mui/material';
-// import { Search, ShoppingCartOutlined } from "@mui/material/Icon";
 import SearchIcon from '@mui/icons-material/Search';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import React from "react";
 
 
 const Container = styled.div`
-  height: 60px;
+  height: 120px;
 `;
 
 const Wrapper = styled.div`
@@ -62,6 +61,7 @@ const MenuItem = styled.div`
 `;
 
 
+
 const Home = () => {
     return (
         <Container>
@@ -86,6 +86,7 @@ const Home = () => {
                     </MenuItem>
                 </Right>
             </Wrapper>
+
         </Container>
     );
 };
