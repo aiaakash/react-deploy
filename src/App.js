@@ -23,12 +23,12 @@ function App() {
         {/* <Document file="/sample.pdf" onLoadSuccess={onDocumentLoadSuccess}>
         <Page height="600" pageNumber={pageNumber} />
       </Document> */}
-        <object width="100%" height="1200px" data="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" type="application/pdf">
-        </object>
+        {/* <object width="100%" height="1200px" data="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" type="application/pdf">
+        </object> */}
         {/* <iframe src="./resume.pdf" height="800" width="70%">
       </iframe> */}
         {/* <embed src="resume.pdf" type="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/view?usp=sharing" width="800px" height="2100px" /> */}
-        {/* <iframe src="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" width="640" height="480" allow="autoplay"></iframe> */}
+        <iframe src="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" width="100%" height="1200px" allow="autoplay"></iframe>
       </body>
     </div >
   );
