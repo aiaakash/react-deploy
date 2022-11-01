@@ -78,13 +78,13 @@ const Home = () => {
                     <Logo>Aakash Chavda</Logo>
                 </Center>
                 <Right>
-                    <Link to="/" style={{ textDecoration: "none" }}>
+                    <Link to="/react-deploy" style={{ textDecoration: "none" }}>
                         <MenuItem>HOME</MenuItem>
                     </Link>
-                    <Link to="/resume" style={{ textDecoration: "none" }}>
+                    <Link to="/react-deploy/resume" style={{ textDecoration: "none" }}>
                         <MenuItem>RESUME</MenuItem>
                     </Link>
-                    <Link to="/about" style={{ textDecoration: "none" }}>
+                    <Link to="/react-deploy/about" style={{ textDecoration: "none" }}>
                         <MenuItem>ABOUT</MenuItem>
                     </Link>
                     <MenuItem>
