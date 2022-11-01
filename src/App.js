@@ -1,5 +1,5 @@
 import './App.css';
-import Home from "./home";
+import Navbar from "./navbar";
 import Resume from "./resume";
 // import { Document, Page, Text, Image, StyleSheet, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import React, { useState } from "react";
@@ -22,14 +22,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Home /> */}
+        {/* <Navbar /> */}
         <Routes>
           {/* <Route path="/react-deploy/">
-            <Route index element={<Home />} />
+            <Route index element={<Navbar />} />
             <Route exact path="resume" element={<Resume />} />
             <Route path="about" element={<About />} /> */}
 
-          <Route exact path="/react-deploy" element={<Home />} />
+          <Route exact path="/react-deploy" element={<Navbar />} />
           <Route exact path="/react-deploy/resume" element={<Resume />} />
           <Route exact path="/react-deploy/about" element={<About />} />
 

@@ -56,47 +56,48 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   margin-left: 25px;
+  font-weight: 600;
 `;
 
 
 
-const Home = () => {
-    return (
-        <Container>
-            <Wrapper>
-                <Left>
-                    {/* <Language>EN</Language> */}
-                    {/* <SearchContainer>
+const Navbar = () => {
+  return (
+    <Container>
+      <Wrapper>
+        <Left>
+          {/* <Language>EN</Language> */}
+          {/* <SearchContainer>
                         <Input placeholder="Search" />
                         <SearchIcon style={{ color: "gray", fontSize: 16 }} />
                     </SearchContainer> */}
-                </Left>
-                <Center>
-                    <Logo>Aakash Chavda</Logo>
-                </Center>
-                <Right>
-                    <Link to="/react-deploy" style={{ textDecoration: "none" }}>
-                        <MenuItem>HOME</MenuItem>
-                    </Link>
-                    <Link to="/react-deploy/resume" style={{ textDecoration: "none" }}>
-                        <MenuItem>RESUME</MenuItem>
-                    </Link>
-                    <Link to="/react-deploy/about" style={{ textDecoration: "none" }}>
-                        <MenuItem>ABOUT</MenuItem>
-                    </Link>
-                    <MenuItem>
-                        {/* <Badge badgeContent={4} color="primary">
+        </Left>
+        <Center>
+          <Logo>Aakash Chavda</Logo>
+        </Center>
+        <Right>
+          <Link to="/react-deploy" style={{ textDecoration: "none" }}>
+            <MenuItem>HOME</MenuItem>
+          </Link>
+          <Link to="/react-deploy/resume" style={{ textDecoration: "none" }}>
+            <MenuItem>RESUME</MenuItem>
+          </Link>
+          <Link to="/react-deploy/about" style={{ textDecoration: "none" }}>
+            <MenuItem>ABOUT</MenuItem>
+          </Link>
+          <MenuItem>
+            {/* <Badge badgeContent={4} color="primary">
                             <LocalGroceryStoreIcon />
                         </Badge> */}
-                    </MenuItem>
-                </Right>
-            </Wrapper>
+          </MenuItem>
+        </Right>
+      </Wrapper>
 
-        </Container>
-    );
+    </Container>
+  );
 };
 
-export default Home;
+export default Navbar;

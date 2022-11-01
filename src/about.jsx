@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import Home from "./home";
+import Home from "./navbar";
 import './about.css';
 
 
