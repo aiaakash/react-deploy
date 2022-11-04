@@ -95,19 +95,19 @@ const Navbar = () => {
         </Center> */}
         {/* <Right> */}
         <Center>
-          <Link to="/react-deploy/home" style={{ textDecoration: "none", color: "#E7F6F2" }}>
+          <Link to="/react-deploy/" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>HOME</MenuItem>
           </Link>
           <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>RESUME</MenuItem>
           </Link>
-          <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
+          {/* <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>SKILLS</MenuItem>
-          </Link>
+          </Link> */}
           <Link to="/react-deploy/about" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>ABOUT</MenuItem>
           </Link>
-          <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
+          <Link to="/react-deploy/contact" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>CONTACT</MenuItem>
           </Link>
         </Center>
