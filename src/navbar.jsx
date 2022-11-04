@@ -94,7 +94,9 @@ const Logoname = styled.span`
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
-  color: #f5f2f4
+  color: #f5f2f4;
+  &:hover {
+    color: green;}
 `;
 
 const Header = styled.header`
