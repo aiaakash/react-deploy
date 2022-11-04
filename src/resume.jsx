@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import Home from "./navbar";
+import Navbar from "./navbar";
 
 
 const Container = styled.div`
@@ -10,7 +10,7 @@ const Container = styled.div`
 const Resume = () => {
   return (
     <div>
-      <Home />
+      <Navbar />
       <Container>
         <body>
           <iframe src="https://drive.google.com/file/d/1nCwnMIO7HSCech2VYWxxfTp2_qvVVjUT/preview" width="100%" height="1200px" allow="autoplay"></iframe>

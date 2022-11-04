@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 120px;
+  
 `;
 
 const Wrapper = styled.div`
@@ -43,10 +44,15 @@ const Input = styled.input`
 const Center = styled.div`
   flex: 1;
   text-align: center;
-`;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  `;
 
 const Logo = styled.h1`
   font-weight: bold;
+  &:hover {
+    transform: scale(1.01);
 `;
 const Right = styled.div`
   flex: 1;
@@ -56,44 +62,56 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   margin-left: 25px;
-  font-weight: 600;
+  font-weight: 700;
+  padding: 12px;
+  // background-color: white;
+  &:hover {
+    background-color: #395B64;
+    transform: scale(1.1);
+    border-radius: 5%;
+    color: #20beff;
+  }
 `;
-
 
 
 const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>
-          {/* <Language>EN</Language> */}
-          {/* <SearchContainer>
+        {/* <Left> */}
+        {/* <Language>EN</Language> */}
+        {/* <SearchContainer>
                         <Input placeholder="Search" />
                         <SearchIcon style={{ color: "gray", fontSize: 16 }} />
                     </SearchContainer> */}
-        </Left>
+        {/* </Left> */}
+        {/* <Center>
+          <Link to="/react-deploy" style={{ textDecoration: "none", color: "#E7F6F2" }} >
+            <Logo>Aakash Chavda</Logo>
+          </Link>
+        </Center> */}
+        {/* <Right> */}
         <Center>
-          <Logo>Aakash Chavda</Logo>
-        </Center>
-        <Right>
-          <Link to="/react-deploy" style={{ textDecoration: "none" }}>
+          <Link to="/react-deploy/home" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>HOME</MenuItem>
           </Link>
-          <Link to="/react-deploy/resume" style={{ textDecoration: "none" }}>
+          <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>RESUME</MenuItem>
           </Link>
-          <Link to="/react-deploy/about" style={{ textDecoration: "none" }}>
+          <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
+            <MenuItem>SKILLS</MenuItem>
+          </Link>
+          <Link to="/react-deploy/about" style={{ textDecoration: "none", color: "#E7F6F2" }}>
             <MenuItem>ABOUT</MenuItem>
           </Link>
-          <MenuItem>
-            {/* <Badge badgeContent={4} color="primary">
-                            <LocalGroceryStoreIcon />
-                        </Badge> */}
-          </MenuItem>
-        </Right>
+          <Link to="/react-deploy/resume" style={{ textDecoration: "none", color: "#E7F6F2" }}>
+            <MenuItem>CONTACT</MenuItem>
+          </Link>
+        </Center>
+        {/* </Right> */}
       </Wrapper>
 
     </Container>
