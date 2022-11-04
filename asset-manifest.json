@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-deploy/static/css/main.e5242c27.css",
-    "main.js": "/react-deploy/static/js/main.9ba0f21f.js",
+    "main.js": "/react-deploy/static/js/main.85b2b08d.js",
     "static/media/Agustina.otf": "/react-deploy/static/media/Agustina.6debf0933297b02857f3.otf",
     "index.html": "/react-deploy/index.html",
     "main.e5242c27.css.map": "/react-deploy/static/css/main.e5242c27.css.map",
-    "main.9ba0f21f.js.map": "/react-deploy/static/js/main.9ba0f21f.js.map"
+    "main.85b2b08d.js.map": "/react-deploy/static/js/main.85b2b08d.js.map"
   },
   "entrypoints": [
     "static/css/main.e5242c27.css",
-    "static/js/main.9ba0f21f.js"
+    "static/js/main.85b2b08d.js"
   ]
 }
